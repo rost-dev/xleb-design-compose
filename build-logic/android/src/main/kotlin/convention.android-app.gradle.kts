@@ -1,3 +1,5 @@
+import com.limprove.finn.withVersionCatalog
+
 plugins {
     id("com.android.application")
     id("kotlin-android")
@@ -28,10 +30,15 @@ android {
     }
 
     buildFeatures {
-        dataBinding = true
+        compose = true
+    }
+    composeOptions {
+        project.withVersionCatalog { libs ->
+            kotlinCompilerExtensionVersion = libs.versions.composeCompiler.get()
+        }
     }
 
     packagingOptions {
-        resources.excludes.add("META-INF/*")
+        resources.excludes += "/META-INF/{AL2.0,LGPL2.1}"
     }
 }
