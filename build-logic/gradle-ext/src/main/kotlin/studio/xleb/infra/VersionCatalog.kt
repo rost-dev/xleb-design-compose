@@ -1,4 +1,4 @@
-package com.limprove.finn
+package studio.xleb.infra
 
 import org.gradle.accessors.dm.LibrariesForLibs
 import org.gradle.api.Project

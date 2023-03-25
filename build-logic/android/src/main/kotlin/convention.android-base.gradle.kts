@@ -1,12 +1,10 @@
 import com.android.build.gradle.BaseExtension
-import com.limprove.finn.withVersionCatalog
+import studio.xleb.infra.withVersionCatalog
 
 configure<BaseExtension> {
 
     sourceSets {
         named("main").configure { java.srcDir("src/main/kotlin") }
-        named("test").configure { java.srcDir("src/espressoTest/kotlin") }
-        named("androidTest").configure { java.srcDir("src/espressoTest/kotlin") }
     }
 
     project.withVersionCatalog { libs ->

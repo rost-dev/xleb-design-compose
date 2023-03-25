@@ -1,4 +1,4 @@
-import com.limprove.finn.withVersionCatalog
+import studio.xleb.infra.withVersionCatalog
 
 plugins {
     id("com.android.application")
@@ -38,7 +38,7 @@ android {
         }
     }
 
-    packagingOptions {
+    packaging {
         resources.excludes += "/META-INF/{AL2.0,LGPL2.1}"
     }
 }
