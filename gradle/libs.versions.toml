@@ -1,7 +1,7 @@
 [versions]
-gradle = "7.4.1"
+gradle = "8.1.0-alpha10"
 kotlin = "1.8.0"
-buildTools = "32.0.0"
+buildTools = "33.0.2"
 minSdk = "24"
 targetSdk = "31"
 compileSdk = "33"
